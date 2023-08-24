@@ -1,0 +1,34 @@
+@import url(/src/Styles/Variaveis.css);
+
+.cabecalho {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--terceira_cor);
+    padding: 0.8rem 1.5rem;
+    opacity: 0.8;
+    width: 100%;
+}
+
+.titulo__hamburguer__container{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu__hamburguer{
+    cursor: pointer;
+}
+
+.cabecalho__titulo {
+    font-size: 2.5rem;
+    color: var(--segunda_cor);
+    font-weight: bold;
+}
+
+.navegacao__container {
+    display: flex;
+    padding: 0 1rem;
+    gap: 2rem;
+}

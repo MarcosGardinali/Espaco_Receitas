@@ -1,0 +1,34 @@
+@import url(/src/Styles/Variaveis.css);
+
+.pagina{
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentacao{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
+}
+
+.apresentacao h3{
+    font-size: 2rem;
+}
+
+.apresentacao strong{
+    color: var(--quarta_cor);
+    font-weight: 600;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.conteudo h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--quarta_cor);
+    margin-bottom: 0.5rem;
+}
