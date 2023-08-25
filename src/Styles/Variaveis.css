@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100&display=swap');
+
+:root{
+    --primeira_cor: #143a52;
+    --segunda_cor: #6e828a;
+    --terceira_cor: #cde3eb;
+    --quarta_cor: #e3eff3;
+    --quinta_cor: #0F0F0F;
+    --sexta_cor: #A27B5C;
+    --sexta_cor_transparente: rgba(162, 123, 92, 0.4);
+
+    --primeira_fonte: 'Montserrat', sans-serif;
+}
