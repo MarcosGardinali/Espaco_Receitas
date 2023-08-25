@@ -1,14 +1,11 @@
-@import url('./Styles/Reset.css');
-@import url('/src/Styles/Variaveis.css');
+@import url(/src/Styles/EstilosGlobais.css);
 
 body {
+  margin: 0;
   background-color: var(--primeira_cor);
   font-family: var(--primeira_fonte);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {

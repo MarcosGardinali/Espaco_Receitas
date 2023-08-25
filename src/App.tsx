@@ -4,6 +4,7 @@ import Cabecalho from "Componentes/Cabecalho";
 import CadastroReceita from "Paginas/CadastroReceita";
 import Sobre from "Paginas/Sobre";
 import Contato from "Paginas/Contato";
+import Rodape from "Componentes/Rodape";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/contato" element={<Contato />} />
         </Routes>
+        <Rodape />
       </BrowserRouter>
     </div>
   );

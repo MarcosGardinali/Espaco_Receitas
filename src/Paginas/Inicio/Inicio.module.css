@@ -3,16 +3,19 @@
 .pagina{
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .apresentacao{
     display: flex;
     justify-content: center;
-    margin: 1.5rem;
+    margin: 1.5rem 0;
+    padding: 2% 15% 1.6% 15%;
 }
 
 .apresentacao h3{
     font-size: 2rem;
+    color: var(--sexta_cor);
 }
 
 .apresentacao strong{
