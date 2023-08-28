@@ -1,7 +1,9 @@
+import styles from './Contato.module.css'
+
 export default function Contato() {
   return (
-    <main>
-        Olá Contato
+    <main className={styles.pagina}>
+        
     </main>
   )
 }

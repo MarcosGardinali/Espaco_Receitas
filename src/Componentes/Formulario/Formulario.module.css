@@ -20,9 +20,11 @@
 
 .campo__receita textarea{
     font-size: 1.2rem;
-    min-width: 90%;
-    min-height: 16rem;
+    min-width: 80%;
+    min-height: 14rem;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
     resize: none;
+    outline: none;
+    border: none;
 }

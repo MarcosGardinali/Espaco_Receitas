@@ -11,7 +11,7 @@ export default function Navegacao({ children, to }: Props) {
     const localizacao = useLocation();
 
     return (
-        <nav>
+        <nav title={children}>
             <Link className={`
             ${styles.link}
             ${localizacao.pathname === to ? styles.linkDestacado : ""}

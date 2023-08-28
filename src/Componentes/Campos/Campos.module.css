@@ -11,9 +11,9 @@
 
 .campos input{
     font-size: 1.2rem;
-    min-width: 90%;
+    min-width: 80%;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
     outline: none;
     border: none;
 }

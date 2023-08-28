@@ -42,7 +42,7 @@ export default function Receitas() {
     return (
         <section className={styles.container__receitas}>
             {receitas.map(receita => (
-                <li className={styles.receita} key={receita.id}>
+                <li className={styles.receita} key={receita.id} title={receita.titulo}>
                     <img className={styles.receita__imagem} src={receita.imagem} alt={receita.titulo} />
                     <h5 className={styles.receita__titulo}>{receita.titulo}</h5>
                     <p className={styles.receita__descricao}>{receita.descricao}</p>
