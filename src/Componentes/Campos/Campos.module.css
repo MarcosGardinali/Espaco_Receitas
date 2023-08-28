@@ -1,0 +1,19 @@
+@import url('/src/Styles/Variaveis.css');
+
+.campos{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--terceira_cor);
+}
+
+.campos input{
+    font-size: 1.2rem;
+    min-width: 80%;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+}

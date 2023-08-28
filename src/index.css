@@ -1,0 +1,27 @@
+@import url(/src/Styles/EstilosGlobais.css);
+
+body {
+  margin: 0;
+  background-color: var(--primeira_cor);
+  font-family: var(--primeira_fonte);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1.5rem;
+  background-color: var(--terceira_cor);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--segunda_cor);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
