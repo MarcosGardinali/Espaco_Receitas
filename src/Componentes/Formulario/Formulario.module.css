@@ -3,19 +3,25 @@
 .formulario{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    background-color: var(--sexta_cor_transparente);
+    gap: 16px;
+    background-color: var(--segunda_cor);
     border: none;
-    padding: 3rem;
+    border-radius: 1rem;
+    padding: 32px;
+}
+
+.campos{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .campo__receita{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 8px;
     font-size: 1.3rem;
     font-weight: bold;
-    color: var(--terceira_cor);
+    color: var(--quarta_cor);
 }
 
 .campo__receita textarea{

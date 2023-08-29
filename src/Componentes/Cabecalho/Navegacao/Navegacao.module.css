@@ -1,7 +1,6 @@
 .link {
     font-size: 1.25rem;
-    line-height: 1.5rem;
-    color: var(--sexta_cor);
+    color: var(--quarta_cor);
 }
 
 .linkDestacado{

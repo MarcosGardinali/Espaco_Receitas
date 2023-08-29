@@ -13,7 +13,7 @@
 .titulo__sobre h2 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--sexta_cor);
+    color: var(--quarta_cor);
 }
 
 .conteudo {
@@ -25,11 +25,11 @@
 
 .conteudo strong{
     font-weight: bold;
-    color: var(--terceira_cor);
+    color: var(--quarta_cor);
 }
 
 .conteudo h3, h4 {
     font-size: 1.3rem;
     font-weight: bold;
-    color: var(--sexta_cor);
+    color: var(--quarta_cor);
 }

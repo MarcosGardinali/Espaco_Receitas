@@ -3,17 +3,17 @@
 .campos{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 8px;
     font-size: 1.3rem;
     font-weight: bold;
-    color: var(--terceira_cor);
+    color: var(--quarta_cor);
 }
 
 .campos input{
     font-size: 1.2rem;
-    min-width: 80%;
+    min-width: 100%;
     border-radius: 1rem;
-    padding: 0.5rem;
+    padding: 8px;
     outline: none;
     border: none;
 }

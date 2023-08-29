@@ -15,7 +15,7 @@
 
 .apresentacao h3{
     font-size: 2rem;
-    color: var(--sexta_cor);
+    color: var(--quarta_cor);
 }
 
 .apresentacao strong{
@@ -26,7 +26,7 @@
 .conteudo{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 16px;
 }
 
 .conteudo h4{

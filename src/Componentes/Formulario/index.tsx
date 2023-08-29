@@ -6,12 +6,14 @@ export default function Formulario() {
 
   return (
     <form className={styles.formulario}>
-      <Campos>
-        Titulo da Receita:
-      </Campos>
-      <Campos>
-        Descrição da Receita:
-      </Campos>
+      <section className={styles.campos}>
+        <Campos>
+          Titulo da Receita:
+        </Campos>
+        <Campos>
+          Descrição da Receita:
+        </Campos>
+      </section>
       <label className={styles.campo__receita}>
         Digite a Receita:
         <textarea required></textarea>

@@ -1,3 +1,18 @@
 .botao{
-    background-color: var(--sexta_cor);
+    background-color: var(--terceira_cor);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: var(--quarta_cor);
+    width: 80%;
+    align-self: center;
+    transition: 0.5s all;
+}
+
+.botao:hover{
+    cursor: pointer;
+    background-color: var(--quarta_cor);
+    color: var(--terceira_cor);
+    border-radius: 1.2rem;
 }

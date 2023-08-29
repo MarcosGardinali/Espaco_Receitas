@@ -5,18 +5,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.8rem;
-    width: 100vw;
+    padding: 14px;
+    width: 100%;
 }
 
-.titulo__hamburguer__container{
+.titulo__hamburguer__container {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 24px;
 }
 
-.menu__hamburguer{
-    cursor: pointer;
+.menu__hamburguer {
+    display: none;
 }
 
 .cabecalho__titulo {
@@ -27,6 +27,39 @@
 
 .navegacao__container {
     display: flex;
-    gap: 1.5rem;
+    gap: 24px;
 }
 
+
+/*Responsividade tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .menu__hamburguer {
+        display: none;
+    }
+}
+
+
+/*Reponsividade mobile*/
+@media only screen and (max-width: 767px) {
+    .menu__hamburguer {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navegacao__container {
+        display: none;
+        position: absolute;
+        top: 7%;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        z-index: 1;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navegacao__container.aberto {
+        display: flex;
+        flex-direction: column;
+    }
+}
