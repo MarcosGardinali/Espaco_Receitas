@@ -1,0 +1,23 @@
+@import './Reset.css';
+@import './Variaveis.css';
+
+body {
+    background-color: var(--primeira_cor);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 1.5rem;
+    background-color: var(--terceira_cor);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--segunda_cor);
+}
