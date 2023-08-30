@@ -18,6 +18,10 @@ export default function Formulario() {
         Digite a Receita:
         <textarea required></textarea>
       </label>
+      <label className={styles.campo__receita}>
+        Foto da Receita:
+        <input type='file'/>
+      </label>
       <Botao>
         Compartilhar Receita!
       </Botao>

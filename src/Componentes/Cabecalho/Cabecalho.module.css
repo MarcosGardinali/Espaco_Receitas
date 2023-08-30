@@ -51,7 +51,7 @@
         position: absolute;
         top: 7%;
         left: 0;
-        background-color: white;
+        background-color: var(--primeira_cor);
         width: 100%;
         z-index: 1;
         flex-direction: column;

@@ -34,3 +34,20 @@
     outline: none;
     border: none;
 }
+
+/*Responsividade tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .campos{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+
+/*Reponsividade mobile*/
+@media only screen and (max-width: 767px) {
+    .campos{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
