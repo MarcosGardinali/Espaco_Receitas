@@ -1,0 +1,10 @@
+.link {
+    font-size: 1.25rem;
+    color: var(--quarta_cor);
+}
+
+.linkDestacado{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
