@@ -2,9 +2,11 @@ import styles from './Campos.module.css';
 
 interface Props{
     children: string;
+    valor: string;
+    alterado: (valor: string) => void
 }
 
-export default function Campos({children}: Props) {
+export default function Campos({children, valor, alterado}: Props) {
 
   return (
     <section>
@@ -12,6 +14,7 @@ export default function Campos({children}: Props) {
             {children}
             <input 
               required
+              onChange={evento => alterado(evento.target.value)}
             >
             </input>
         </label>

@@ -20,16 +20,16 @@ export default function Cabecalho() {
         <Link to={'/'} className={styles.cabecalho__titulo} title='Home'>Espaço Receitas</Link>
       </section>
       <section className={`${styles.navegacao__container} ${menuAberto ? styles.aberto : ''}`}>
-        <Navegacao to={'/'}>
+        <Navegacao to={'/'} onClick={toggleMenu}>
           Inicio
         </Navegacao>
-        <Navegacao to={'/cadastrar-receita'}>
+        <Navegacao to={'/cadastrar-receita'} onClick={toggleMenu}>
           Cadastrar Receita
         </Navegacao>
-        <Navegacao to={'/sobre'}>
+        <Navegacao to={'/sobre'} onClick={toggleMenu}>
           Sobre
         </Navegacao>
-        <Navegacao to={'/contato'}>
+        <Navegacao to={'/contato'} onClick={toggleMenu}>
           Contato
         </Navegacao>
       </section>

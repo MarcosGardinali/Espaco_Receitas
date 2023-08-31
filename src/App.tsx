@@ -5,16 +5,27 @@ import CadastroReceita from "Paginas/CadastroReceita";
 import Sobre from "Paginas/Sobre";
 import Contato from "Paginas/Contato";
 import Rodape from "Componentes/Rodape";
+import { useState } from "react";
 
 
 function App() {
+
+  interface Receita {
+    id: string;
+    titulo: string;
+    descricao: string;
+    receita: string;
+  }
+
+  const [receita, setReceita] = useState<Receita[]>([]);
+
   return (
     <div className="App">
       <BrowserRouter>
-      <Cabecalho />
+        <Cabecalho />
         <Routes>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/cadastrar-receita" element={<CadastroReceita/>} />
+          <Route path="/" element={<Inicio receitas={receita}/>} />
+          <Route path="/cadastrar-receita" element={<CadastroReceita cadastrarReceita={novaReceita => setReceita([...receita, novaReceita])}/>} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/contato" element={<Contato />} />
         </Routes>
