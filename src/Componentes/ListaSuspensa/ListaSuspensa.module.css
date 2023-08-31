@@ -1,0 +1,17 @@
+.lista__suspensa{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--quarta_cor);
+}
+
+.lista__suspensa select{
+    font-size: 1.2rem;
+    min-width: 100%;
+    border-radius: 1rem;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
