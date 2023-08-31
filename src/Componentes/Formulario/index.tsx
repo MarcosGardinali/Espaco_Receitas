@@ -3,6 +3,8 @@ import styles from './Formulario.module.css'
 import Botao from 'Componentes/Botao'
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import { useNavigate } from 'react-router-dom';
+import ListaSuspensa from 'Componentes/ListaSuspensa';
 
 interface Props {
   cadastrarReceita: (novaReceita: Receita) => void;
@@ -13,38 +15,41 @@ interface Receita {
   titulo: string;
   descricao: string;
   receita: string;
+  categoria: string
 }
 
 export default function Formulario({ cadastrarReceita }: Props) {
 
+  const navigate = useNavigate();
+
+
   const [tituloReceita, setTituloReceita] = useState('');
   const [descricaoReceita, setDescricaoReceita] = useState('');
-  const [receita, setReceita] = useState('');
+  const [receitaPreparo, setReceitaPreparo] = useState('');
+  const [categoria, setCategoria] = useState('')
 
   function salvar(evento: React.FormEvent<HTMLFormElement>) {
     evento.preventDefault()
-    const receitaFinal = [
-      tituloReceita,
-      descricaoReceita,
-      receita
-    ]
+
 
     const novaReceita: Receita = {
       id: uuidv4(),
       titulo: tituloReceita,
       descricao: descricaoReceita,
-      receita: receita,
+      receita: receitaPreparo,
+      categoria: categoria
     };
     cadastrarReceita(novaReceita)
 
-    setTituloReceita('');
-    setDescricaoReceita('');
-    setReceita('');
-    console.log(receitaFinal)
+    setTituloReceita('')
+    setDescricaoReceita('')
+    setReceitaPreparo('')
+
+    navigate('/');
   }
 
   function receitaDigitada(event: React.ChangeEvent<HTMLTextAreaElement>) {
-    setReceita(event.target.value);
+    setReceitaPreparo(event.target.value);
   }
 
   return (
@@ -62,18 +67,18 @@ export default function Formulario({ cadastrarReceita }: Props) {
         >
           Descrição da Receita:
         </Campos>
+        <ListaSuspensa
+          valor={categoria}
+          alterado={setCategoria}
+        />
       </section>
       <label className={styles.campo__receita}>
         Digite a Receita:
         <textarea
           required
-          value={receita}
+          value={receitaPreparo}
           onChange={receitaDigitada}
         ></textarea>
-      </label>
-      <label className={styles.campo__receita}>
-        Foto da Receita:
-        <input type='file' />
       </label>
       <Botao>
         Compartilhar Receita!

@@ -37,15 +37,28 @@
 
 .receita__titulo {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: var(--quarta_cor);
 }
 
 .receita__descricao {
     text-align: justify;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--quarta_cor);
+}
+
+.rodape__receita{
+    display: flex;
+    justify-content: center;
+    border-top: 0.1rem solid black;
+    padding-top: 1rem;
+}
+
+.rodape__receita span{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
 }
 
 /*Responsividade tablet*/

@@ -1,11 +1,13 @@
 import Receitas from 'Componentes/Receitas';
 import styles from './Inicio.module.css';
+import NenhumaReceita from 'Componentes/NenhumaReceita';
 
 interface Receita {
   id: string;
   titulo: string;
   descricao: string;
   receita: string;
+  categoria: string;
 }
 
 interface Props{
@@ -20,11 +22,17 @@ export default function Inicio({receitas}: Props) {
       </section>
       <article className={styles.conteudo}>
         <h4>Confira nossas receitas:</h4>
-        <ul className={styles.conteudo__receitas}>
+        {receitas.length > 0 ? (
+          <ul className={styles.conteudo__receitas}>
           <Receitas 
             receitas={receitas}
           />
         </ul>
+        ):(
+          <NenhumaReceita />
+        )
+        }
+        
       </article>
     </main>
   );

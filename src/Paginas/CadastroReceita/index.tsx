@@ -10,6 +10,7 @@ interface Receita {
   titulo: string;
   descricao: string;
   receita: string;
+  categoria: string
 }
 
 export default function CadastroReceita({cadastrarReceita}: Props) {

@@ -3,7 +3,7 @@
 .formulario{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 2rem;
     background-color: var(--segunda_cor);
     border: none;
     border-radius: 1rem;
@@ -12,6 +12,8 @@
 
 .campos{
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
     justify-content: space-evenly;
 }
 

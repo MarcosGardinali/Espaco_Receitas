@@ -15,6 +15,7 @@ function App() {
     titulo: string;
     descricao: string;
     receita: string;
+    categoria: string;
   }
 
   const [receita, setReceita] = useState<Receita[]>([]);
