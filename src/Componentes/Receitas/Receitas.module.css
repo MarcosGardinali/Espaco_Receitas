@@ -59,6 +59,7 @@
     display: flex;
     gap: 0.5rem;
     align-items: center;
+    color: var(--quarta_cor);
 }
 
 /*Responsividade tablet*/

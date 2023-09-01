@@ -10,11 +10,11 @@ interface Receita {
   categoria: string;
 }
 
-interface Props{
+interface Props {
   receitas: Receita[]
 }
 
-export default function Inicio({receitas}: Props) {
+export default function Inicio({ receitas }: Props) {
   return (
     <main className={styles.pagina}>
       <section className={styles.apresentacao}>
@@ -24,15 +24,15 @@ export default function Inicio({receitas}: Props) {
         <h4>Confira nossas receitas:</h4>
         {receitas.length > 0 ? (
           <ul className={styles.conteudo__receitas}>
-          <Receitas 
-            receitas={receitas}
-          />
-        </ul>
-        ):(
+            <Receitas
+              receitas={receitas}
+            />
+          </ul>
+        ) : (
           <NenhumaReceita />
         )
         }
-        
+
       </article>
     </main>
   );

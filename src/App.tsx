@@ -6,6 +6,8 @@ import Sobre from "Paginas/Sobre";
 import Contato from "Paginas/Contato";
 import Rodape from "Componentes/Rodape";
 import { useState } from "react";
+import Receita from "Paginas/Receita";
+import NaoEncontrada from "Paginas/NaoEncontrada";
 
 
 function App() {
@@ -25,10 +27,12 @@ function App() {
       <BrowserRouter>
         <Cabecalho />
         <Routes>
-          <Route path="/" element={<Inicio receitas={receita}/>} />
-          <Route path="/cadastrar-receita" element={<CadastroReceita cadastrarReceita={novaReceita => setReceita([...receita, novaReceita])}/>} />
-          <Route path="/sobre" element={<Sobre />} />
-          <Route path="/contato" element={<Contato />} />
+          <Route path="/" element={<Inicio receitas={receita} />} />
+          <Route path="cadastrar-receita" element={<CadastroReceita cadastrarReceita={novaReceita => setReceita([...receita, novaReceita])} />} />
+          <Route path="sobre" element={<Sobre />} />
+          <Route path="contato" element={<Contato />} />
+          <Route path="receita/:id" element={<Receita receitas={receita} />} />
+          <Route path="*" element={<NaoEncontrada />} />
         </Routes>
         <Rodape />
       </BrowserRouter>
