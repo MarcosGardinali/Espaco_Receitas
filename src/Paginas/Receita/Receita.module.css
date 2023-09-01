@@ -1,0 +1,39 @@
+@import url(/src/Styles/Variaveis.css);
+
+.pagina {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-sizing: border-box;
+    padding: 2% 15% 1.6% 15%;
+    text-align: center;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.apresentacao h2 {
+    font-size: 2rem;
+    color: var(--quarta_cor);
+}
+
+.apresentacao__imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.imagem__comida{
+    max-width: 35%;
+    max-height: 20%;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    text-align: justify;
+}
